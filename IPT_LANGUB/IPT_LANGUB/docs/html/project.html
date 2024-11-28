@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+    <header>
+        <img src="../images/nobg.png" alt="Logo">
+        <div class="nav-buttons">
+            <a href="../../../index.html"><button>Home</button></a>
+            <a href="../html/about.html"><button>About</button></a>
+            <a href="../html/BIODATA.html"><button>Biodata</button></a>
+            <a href="../html/project.html"><button>Contacts</button></a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="send_message.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social-media">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/justin-clyde-langub" target="_blank">
+                <img src="../images/link.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/justin-langub" target="_blank">
+                <img src="../images/github.jpg" alt="GitHub">
+            </a>
+            <a href="https://twitter.com/justin_langub" target="_blank">
+                <img src="../images/x.png" alt="Twitter">
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <h2>Contact Info</h2>
+        <p>Email: <a href="mailto:justinlangub@example.com">justinlangub@example.com</a></p>
+        <p>Phone: +63 912 345 6789</p>
+    </section>
+
+</body>
+</html>

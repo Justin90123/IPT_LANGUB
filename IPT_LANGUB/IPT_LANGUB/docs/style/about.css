@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    height: 70px;
+}
+
+header .nav-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+header button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Aspiring IT Section */
+.aspiring-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+    margin-top: 50px;
+}
+
+.aspiring-it-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1300px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 50px;
+}
+
+.aspiring-it-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 40px;
+}
+
+.aspiring-it-text {
+    max-width: 700px;
+}
+
+.aspiring-it-text h2 {
+    font-size: 36px; /* Larger heading */
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.aspiring-it-text p {
+    font-size: 22px; /* Larger paragraph text */
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aspiring-it-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aspiring-it-img {
+        width: 250px;
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    header button {
+        padding: 14px 26px;
+        font-size: 16px;
+    }
+
+    header .logo {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aspiring-it-content {
+        padding: 30px;
+    }
+
+    .aspiring-it-text h2 {
+        font-size: 30px;
+    }
+
+    .aspiring-it-text p {
+        font-size: 18px;
+    }
+
+    header button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}

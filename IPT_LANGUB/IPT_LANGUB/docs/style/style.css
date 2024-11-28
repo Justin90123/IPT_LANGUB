@@ -1,0 +1,145 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a more professional font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for clean look */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Improved line-height for readability */
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 40px; /* More padding for a balanced header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle, more professional shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styles */
+header img {
+    height: 40px; /* Slightly smaller logo for better proportion */
+    transition: transform 0.3s ease;
+}
+
+/* Logo hover effect */
+header img:hover {
+    transform: scale(1.05); /* More subtle logo enlargement */
+}
+
+/* Navbar button styles */
+header .nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+header button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Uppercase for better readability */
+    letter-spacing: 1px; /* Slight letter spacing for a polished look */
+}
+
+header button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+/* Main image section styles */
+.main-image {
+    width: 100%;
+    height: 450px; /* Increased height for a more impactful header */
+    background-image: url('../images/langub.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.main-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker overlay for better readability */
+}
+
+/* Image row container styles */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* Image and intro box styling */
+.image-row .intro {
+    width: 60%; /* Adjust width for better balance */
+    background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Subtle gradient for a modern look */
+    color: #333;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Softer, more professional shadow */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.image-row .intro p {
+    font-size: 18px; /* Slightly smaller font for professional look */
+    line-height: 1.75;
+    margin-bottom: 20px;
+    color: #555; /* Subtle text color for the body */
+}
+
+.image-row .intro p strong {
+    color: #007BFF; /* Maintain brand color for emphasis */
+    font-size: 20px;
+}
+
+.image-row .intro p em {
+    font-style: italic;
+    color: #777; /* Slightly lighter emphasis */
+}
+
+/* Hover effect for the intro box */
+.image-row .intro:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-row .intro {
+        width: 85%; /* Narrower width on smaller screens */
+    }
+
+    header button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    header img {
+        height: 40px; /* Smaller logo on mobile */
+    }
+
+    .main-image {
+        height: 300px; /* Reduce header height for smaller screens */
+    }
+}
